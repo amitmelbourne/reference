@@ -1,0 +1,38 @@
+limits = [
+        'instruction': 82,
+        'branch'     : 65,
+        'line'       : 83,
+        'complexity' : 54,
+        'method'     : 76,
+        'class'      : 93
+]
+
+sonarRunner {
+    sonarProperties {
+        property 'sonar.exclusions', '**/Application.java,**/au/com/medibank/ws/esb/**,**/*ControllerImpl.java'
+    }
+}
+
+dependencies {
+    compile "com.medibank.digital.api:esb-api:$esbVersion"
+}
+
+task pathingJar(type: Jar) {
+    dependsOn configurations.runtime
+    appendix = 'pathing'
+
+    doFirst {
+        manifest {
+            attributes "Class-Path": configurations.runtime.files.collect {
+                it.toURI().toString().replaceFirst('/file:/+/', '/')
+            }.join(' ')
+        }
+    }
+}
+
+bootRun {
+    dependsOn pathingJar
+    doFirst {
+        classpath = files("$buildDir/classes/main", "$buildDir/resources/main", pathingJar.archivePath)
+    }
+}

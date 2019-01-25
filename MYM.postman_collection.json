@@ -1,0 +1,605 @@
+{
+	"info": {
+		"_postman_id": "b220ad8f-9bc5-4b23-8d5b-b29eada9f9fb",
+		"name": "MYM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/claims/benefitEligibilityCheck/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userId",
+						"value": "1234"
+					},
+					{
+						"key": "bpId",
+						"value": "5677"
+					},
+					{
+						"key": "sessionId",
+						"value": "17273"
+					},
+					{
+						"key": "transactionId",
+						"value": "123"
+					},
+					{
+						"key": "timestamp",
+						"value": "2000-12-12"
+					},
+					{
+						"key": "trackingId",
+						"value": "123"
+					},
+					{
+						"key": "x-Forwarded-For",
+						"value": "application/json"
+					},
+					{
+						"key": "creationTime",
+						"value": "2000-12-12"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"category\":\"DIGITALQUOTE\",\r\n   \"practiceTypeCode\":\"1AA\",\r\n   \"referenceNumber\":\"REF98781391006\",\r\n   \"isBonusClaim\":false,\r\n   \"accountPaid\":true,\r\n   \"notionalClaim\":false,\r\n   \"patientMemberId\":\"4100090668\",\r\n   \"providerNumber\":\"0615061L\",\r\n   \"pharmacyName\":\"First Choice Pharmacy Berwick\",\r\n   \"totalChargeAmount\":40000.0,\r\n   \"totalDiscountAmount\":4.0,\r\n   \"items\":[\r\n      {\r\n         \"itemID\":12,\r\n         \"code\":\"500\",\r\n         \"dateOfService\":\"2018-06-21\",\r\n         \"toothId\":\"12\",\r\n         \"quantity\":12,\r\n         \"chargeAmount\":36.0\r\n      }\r\n   ],\r\n   \"policyRef\":{\r\n      \"id\":\"40050803\",\r\n      \"type\":\"policies\",\r\n      \"_link\":\"/v1/policies/40045812A\"\r\n   }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/claims/benefitEligibilityCheck/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"claims",
+						"benefitEligibilityCheck",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-sit01.digidev.ha-medibank.com/claims/benefitEligibilityCheck",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userId",
+						"value": "1234"
+					},
+					{
+						"key": "bpId",
+						"value": "4100077081"
+					},
+					{
+						"key": "sessionId",
+						"value": "17273"
+					},
+					{
+						"key": "transactionId",
+						"value": "123"
+					},
+					{
+						"key": "timestamp",
+						"value": "2000-12-12"
+					},
+					{
+						"key": "trackingId",
+						"value": "123"
+					},
+					{
+						"key": "x-Forwarded-For",
+						"value": "application/json"
+					},
+					{
+						"key": "creationTime",
+						"value": "2000-12-12"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "APISessionToken",
+						"value": "eyJhbGciOiAiZGlyIiwgImVuYyI6ICJBMjU2R0NNIn0..tF5Ps8edWxO4CAbj2X6jhg.LuRpA5pwNyjLFt4e-CJtdxrcR4q2I_1mwGRy2uwk7qRP2rZLwlGmAR0ZES1JO_agw0wXOyIeplp7XOEClohMPI3gMnRiINoNeBRxkBGTUcFYRbRd7VW76dCyh2tJk6KSPUqCI0bB6UXsOx3DBsTG2nW5pehtm8PeqQXxZm0xgBOMAOTN6djTZ4SnNp-XhPMhBbHUuXkoM07CxOXSxF603MvD7MmO3nnUBxwFDBW7hUWIHjSAeZV9CARoi0Qy5fnUEtYzLVNg-tn9VZ-zn5hrf4n7zZsroQEo1qafNjMPbdhpGptIXHaESTKBG-bTHgDmopiGTt35CgabPsJ2j7us4XHA92exD816B0WkmvLMjD541jS5pmeWKIv3axxlObE8UWKvnDUb8sDsOV-ZSACRQTcU8UxEyxRDPrIjNF5ifrWu1jhTZbVcLCqXtsbnnpbUp4paqhJyfujhXUhOG9PjIyQIo587HRV_OaoA5aYtrWUzrXcQAwXFVh-HqmJIQdSDqyWCoimBz4rIe2cc5DsFh3RrZP8aq4nwLnI0Gja7TpU.VUcY-M4Z6_I-yJQFko-jNQ"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"category\":\"DIGITALQUOTE\",\r\n   \"practiceTypeCode\":\"1AA\",\r\n   \"referenceNumber\":\"REF98781391122\",\r\n   \"isBonusClaim\":false,\r\n   \"accountPaid\":true,\r\n   \"notionalClaim\":false,\r\n   \"patientMemberId\":\"4100077081\",\r\n   \"providerNumber\":\"4738101X\",\r\n   \"pharmacyName\":\"First Choice Pharmacy Berwick\",\r\n   \"totalChargeAmount\":40000.0,\r\n   \"totalDiscountAmount\":4.0,\r\n   \"items\":[\r\n      {\r\n         \"itemID\":1234,\r\n         \"code\":\"39128A\",\r\n         \"dateOfService\":\"2018-06-25\",\r\n         \"toothId\":\"12\",\r\n         \"pharmacyScriptNumber\":\"12345\",\r\n         \"prescribingDoctor\":\"Dr. Strangelove\",\r\n         \"quantity\":12,\r\n         \"chargeAmount\":36.0\r\n      },\r\n      {\r\n         \"itemID\":1234,\r\n         \"code\":\"39128A\",\r\n         \"dateOfService\":\"2018-04-25\",\r\n         \"toothId\":\"2B\",\r\n         \"pharmacyScriptNumber\":\"67890\",\r\n         \"prescribingDoctor\":\"Dr. Bruce Banner\",\r\n         \"quantity\":6,\r\n         \"chargeAmount\":30.0\r\n      }\r\n   ],\r\n   \"policyRef\":{\r\n      \"id\":\"40045812\",\r\n      \"type\":\"policies\",\r\n      \"_link\":\"/v1/policies/40045812A\"\r\n   }\r\n}"
+				},
+				"url": {
+					"raw": "https://api-sit01.digidev.ha-medibank.com/claims/benefitEligibilityCheck",
+					"protocol": "https",
+					"host": [
+						"api-sit01",
+						"digidev",
+						"ha-medibank",
+						"com"
+					],
+					"path": [
+						"claims",
+						"benefitEligibilityCheck"
+					]
+				},
+				"description": "MYM-SIT"
+			},
+			"response": []
+		},
+		{
+			"name": "Sessions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "{{client_id}}"
+					},
+					{
+						"key": "client_secret",
+						"value": "{{client_secret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"zeki.guler@medibank.com.au\",\n    \"password\": \"%%%Abcde123\"\n}"
+				},
+				"url": {
+					"raw": "https://api-sit01.digidev.ha-medibank.com/api/v1/sessionsV2",
+					"protocol": "https",
+					"host": [
+						"api-sit01",
+						"digidev",
+						"ha-medibank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"sessionsV2"
+					]
+				},
+				"description": "Post request to create a user session."
+			},
+			"response": []
+		},
+		{
+			"name": "http://ret-sdpc-service-dev02.digidev.ha-medibank.com/SDPCaptureWebApp/api/soap/join?wsdl",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://ret-sdpc-service-dev02.digidev.ha-medibank.com/SDPCaptureWebApp/api/soap/join?wsdl",
+					"protocol": "http",
+					"host": [
+						"ret-sdpc-service-dev02",
+						"digidev",
+						"ha-medibank",
+						"com"
+					],
+					"path": [
+						"SDPCaptureWebApp",
+						"api",
+						"soap",
+						"join"
+					],
+					"query": [
+						{
+							"key": "wsdl",
+							"value": null
+						}
+					]
+				},
+				"description": "SDP"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-sit01.digidev.ha-medibank.com/members/flybuys/eligibilityCheck",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "timestamp",
+						"value": "2000-12-12"
+					},
+					{
+						"key": "transactionId",
+						"value": "23423433333",
+						"disabled": true
+					},
+					{
+						"key": "sessionId",
+						"value": "2432342342222",
+						"disabled": true
+					},
+					{
+						"key": "x-Forwarded-For",
+						"value": "234234",
+						"disabled": true
+					},
+					{
+						"key": "bpId",
+						"value": "4100077081",
+						"disabled": true
+					},
+					{
+						"key": "userId",
+						"value": "234234",
+						"disabled": true
+					},
+					{
+						"key": "trackingId",
+						"value": "234234234",
+						"disabled": true
+					},
+					{
+						"key": "creationTime",
+						"value": "2000-12-12",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "APISessionToken",
+						"value": "eyJhbGciOiAiZGlyIiwgImVuYyI6ICJBMjU2R0NNIn0..wrF9CQ0dKHNSYTI3c4UkrQ.h7vTujo2YJNoG05TmQ5P5RljkxE0F-Rak7yOwza3GEIvRFgvuv7UDQNK4AZkh4fjWnzDNP6DvzmSvTzULM88KOx35deOi2OuFwjr22Q3-dXce8OGXf207GuinG3xRv7dJUSyMiZWeY5U3rw73QsVy0PxTnJkfVb_koiEZ1e-8rLuUwMafp8GeIzgIsnVW-Xns7ZgnrGogM-tvhOJSOz_09Y6urf7xZBGhhvJOgv5pLsC2byXZV6D80UGLqewLtLFIlHx1_TQOjzAsctnR_e2G4GOSrG3IPiQq8CK2ekPghk-vlwrCWBUCPspQuWS88GjMNVH1tIhTsdiWZtcIbXZN2kOmT1V6Ehqd9JXoxz4xhMQkXmzKeMg9DOxPGy4d9RKdF6nTh3_BNSJJh9YNO9qKwbGh8cN6Wj031mTOmPyUHJsm_fo_gvJ5-NPHeVDbzz-otEqE36pUoGMrKf8WH8HSENZkm-2TPYfdCzxEDD32Sz5POswqoKE7cj81g6oisKw0__1LQ9a97KEIeHYiGdEQYnl83S29tIuIpY17fPk7Co.B4-owhgMF22TEzcQ5kptCA",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"member\": {\n   \"policyNumber\": \"40042042\",\n   \"firstName\": \"payment\",\n   \"birthDate\": \"1990-01-01\"\n }\n}"
+				},
+				"url": {
+					"raw": "https://api-sit01.digidev.ha-medibank.com/members/flybuys/eligibilityCheck",
+					"protocol": "https",
+					"host": [
+						"api-sit01",
+						"digidev",
+						"ha-medibank",
+						"com"
+					],
+					"path": [
+						"members",
+						"flybuys",
+						"eligibilityCheck"
+					]
+				},
+				"description": "Flybuys"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8123/addresses/select?address=812/55 Merchant Street, Docklands VIC 3008",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8123/addresses/select?address=812/55 Merchant Street, Docklands VIC 3008",
+					"host": [
+						"localhost"
+					],
+					"port": "8123",
+					"path": [
+						"addresses",
+						"select"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "812/55 Merchant Street, Docklands VIC 3008"
+						}
+					]
+				},
+				"description": "Veda"
+			},
+			"response": []
+		},
+		{
+			"name": "Policies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "userId",
+						"value": "1234"
+					},
+					{
+						"key": "bpId",
+						"value": "4100083816"
+					},
+					{
+						"key": "sessionId",
+						"value": "17273"
+					},
+					{
+						"key": "transactionId",
+						"value": "123"
+					},
+					{
+						"key": "timestamp",
+						"value": "2000-12-12"
+					},
+					{
+						"key": "trackingId",
+						"value": "123"
+					},
+					{
+						"key": "x-Forwarded-For",
+						"value": "application/json"
+					},
+					{
+						"key": "creationTime",
+						"value": "2000-12-12"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:50177/policies/40047766K",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50177",
+					"path": [
+						"policies",
+						"40047766K"
+					]
+				},
+				"description": "Search Claims History\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Members",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "userId",
+						"value": "1234"
+					},
+					{
+						"key": "bpId",
+						"value": "4100083816"
+					},
+					{
+						"key": "sessionId",
+						"value": "17273"
+					},
+					{
+						"key": "transactionId",
+						"value": "123"
+					},
+					{
+						"key": "timestamp",
+						"value": "2000-12-12"
+					},
+					{
+						"key": "trackingId",
+						"value": "123"
+					},
+					{
+						"key": "x-Forwarded-For",
+						"value": "application/json"
+					},
+					{
+						"key": "creationTime",
+						"value": "2000-12-12"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:50175/members",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50175",
+					"path": [
+						"members"
+					]
+				},
+				"description": "Endpoint to retrieve member info associated with the logged in user.\n\nIf the user belongs to multiple memberships, then an array of membership\ndetails will be returned."
+			},
+			"response": []
+		},
+		{
+			"name": "Sessions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "{{client_id}}"
+					},
+					{
+						"key": "client_secret",
+						"value": "{{client_secret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"zeki.guler@medibank.com.au\",\n    \"password\": \"%%%Abcde123\"\n}"
+				},
+				"url": {
+					"raw": "https://api-sit01.digidev.ha-medibank.com/api/v1/sessionsV2",
+					"protocol": "https",
+					"host": [
+						"api-sit01",
+						"digidev",
+						"ha-medibank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"sessionsV2"
+					]
+				},
+				"description": "Post request to create a user session."
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-preprod01.ha-medibank.com/api/v1/sessions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "{{client_id}}"
+					},
+					{
+						"key": "client_secret",
+						"value": "{{client_secret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"testaccount_ats2@medibank.com.au\",\"password\":\"%%%Abcde123\"}"
+				},
+				"url": {
+					"raw": "https://api-preprod01.ha-medibank.com/api/v1/sessions",
+					"protocol": "https",
+					"host": [
+						"api-preprod01",
+						"ha-medibank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"sessions"
+					]
+				},
+				"description": "Session Preprod"
+			},
+			"response": []
+		},
+		{
+			"name": "https://members-preprod01.ha-medibank.com/api/v1/policies/40043663H/carddata",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "userId",
+						"value": "1234"
+					},
+					{
+						"key": "bpId",
+						"value": "4100077081"
+					},
+					{
+						"key": "sessionId",
+						"value": "17273"
+					},
+					{
+						"key": "transactionId",
+						"value": "123"
+					},
+					{
+						"key": "timestamp",
+						"value": "2000-12-12"
+					},
+					{
+						"key": "trackingId",
+						"value": "123"
+					},
+					{
+						"key": "x-Forwarded-For",
+						"value": "application/json"
+					},
+					{
+						"key": "creationTime",
+						"value": "2000-12-12"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "APISessionToken",
+						"value": "eyJhbGciOiAiZGlyIiwgImVuYyI6ICJBMjU2R0NNIn0..nKDN859ZqsRXepa6f-_T_w.Kt8hs0a1BkPlrZRXVyjm2l0iCq4wcKRUmRDimq1XaelnJgM2vrRZoAmjYQI6r-mwbHGWtFMfTZ6dEApxn2nM43g8esd6iqMQ_SvCZlUWAyalcdlEkm6tGx0q-1OYDPzT-MCzvJCBZkSx1ydrb5JW2XdLo_oM4S0rGgehgTM23y6KOtnSQUQt-0ZRGrXSg0zJe7emlP-OH8rYz0q-dV21XuO0_tFUmsyLzhOmBNG8OGW75aIKun5bnhd9gra48nb3hKaQ4bwFm2u9r610s1qC9lT_fBgooB4UcVysFggtdnAa2-dAGRl9GjlyMFdwM1WGbjcp4hkhyM9mfEWpTkqQveYoHZ3JgWpuSGiHqZBQVNvPkBLq5JAhQhGfehHy0oK4DRlMDEcTrNFCA719bt7XaiCEQevAtW0IWYCNbCW6OSSS1WAiwpkbfSTIIafNY3bxMeI7WopHgrE8t1b5U4w_AL1OquEPw89b2_sEElEDqgn8xwNpLZXuHYTJKD3uvizKrMpQbqHYBKg1ZN3V0J76YlqQ0XG94Uz8R_7vG8GwPwH6inGTezbGVQ.ammCM8ABxiCFAjcyIygS-g"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://members-preprod01.ha-medibank.com/api/v1/policies/40043663H/carddata",
+					"protocol": "https",
+					"host": [
+						"members-preprod01",
+						"ha-medibank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"policies",
+						"40043663H",
+						"carddata"
+					]
+				},
+				"description": "Policy Preprod"
+			},
+			"response": []
+		}
+	]
+}
